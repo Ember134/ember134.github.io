@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IEEE MNU Student Branch</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Your JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="#home">
+                    IEEE MNU SB
+                </a>
+
+                <!-- Mobile menu button -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">
+                                Events
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#achievements">
+                                Achievements
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#partners">
+                                Partners
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">
+                                News
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ==================== HERO ==================== -->
+
+        <section id="home" class="hero-section">
+
+            <div class="container">
+
+                <div class="row align-items-center min-vh-100">
+
+                    <div class="col-lg-8 mx-auto text-center">
+
+                        <p class="text-uppercase fw-bold">
+                            IEEE MNU Student Branch
+                        </p>
+
+                        <h1 class="display-3 fw-bold">
+                            Connecting Students With
+                            Technology & Innovation
+                        </h1>
+
+                        <p class="lead my-4">
+                            Discover events, workshops, projects,
+                            and opportunities to grow with IEEE.
+                        </p>
+
+                        <a href="#events" class="btn btn-primary btn-lg me-2">
+                            Explore Events
+                        </a>
+
+                        <a href="#about" class="btn btn-outline-light btn-lg">
+                            Learn More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== ABOUT ==================== -->
+
+        <section id="about" class="section-padding">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <p class="section-label">
+                        WHO WE ARE
+                    </p>
+
+                    <h2 class="fw-bold">
+                        About IEEE MNU SB
+                    </h2>
+
+                </div>
+
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <div class="custom-card h-100">
+
+                            <h3>
+                                Building a Community
+                            </h3>
+
+                            <p>
+                                IEEE MNU Student Branch provides
+                                students with opportunities to learn,
+                                collaborate, develop technical skills,
+                                and participate in professional
+                                activities.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="custom-card h-100">
+
+                            <h3>
+                                Our Mission
+                            </h3>
+
+                            <p>
+                                We aim to connect students with
+                                technology, innovation, professional
+                                development, and a community of
+                                like-minded students.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== EVENTS ==================== -->
+
+        <section id="events" class="section-padding bg-light">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <p class="section-label">
+                        WHAT'S HAPPENING
+                    </p>
+
+                    <h2 class="fw-bold">
+                        Upcoming Events
+                    </h2>
+
+                </div>
+
+
+                <!-- Event filters -->
+
+                <div class="text-center mb-4">
+
+                    <button
+                    class="btn btn-primary filter-btn"
+                    onclick="filterEvents('all', this)"
+                    >
+                        All
+                    </button>
+
+                    <button
+                    class="btn btn-outline-primary filter-btn"
+                    onclick="filterEvents('Technical', this)"
+                    >
+                        Technical
+                    </button>
+
+                    <button
+                    class="btn btn-outline-primary filter-btn"
+                    onclick="filterEvents('Competition', this)"
+                    >
+                        Competition
+                    </button>
+
+                </div>
+
+
+                <!-- JavaScript puts events here -->
+
+                <div
+                    id="event-container"
+                    class="row g-4"
+                >
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== ACHIEVEMENTS ==================== -->
+
+        <section id="achievements" class="section-padding">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <p class="section-label">
+                        OUR IMPACT
+                    </p>
+
+                    <h2 class="fw-bold">
+                        Achievements
+                    </h2>
+
+                </div>
+
+
+                <div class="row g-4 text-center">
+
+                    <div class="col-6 col-lg-3">
+
+                        <div class="achievement-card">
+
+                            <h3>
+                                20+
+                            </h3>
+
+                            <p>
+                                Events
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-6 col-lg-3">
+
+                        <div class="achievement-card">
+
+                            <h3>
+                                300+
+                            </h3>
+
+                            <p>
+                                Members
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-6 col-lg-3">
+
+                        <div class="achievement-card">
+
+                            <h3>
+                                15+
+                            </h3>
+
+                            <p>
+                                Workshops
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-6 col-lg-3">
+
+                        <div class="achievement-card">
+
+                            <h3>
+                                800+
+                            </h3>
+
+                            <p>
+                                Participants
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== PARTNERS ==================== -->
+
+        <section id="partners" class="section-padding bg-light">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <p class="section-label">
+                        SUPPORTING INNOVATION
+                    </p>
+
+                    <h2 class="fw-bold">
+                        Our Partners
+                    </h2>
+
+                </div>
+
+
+                <div class="row g-4 text-center">
+
+                    <div class="col-md-4">
+
+                        <div class="partner-card">
+                            Partner 1
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="partner-card">
+                            Partner 2
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="partner-card">
+                            Partner 3
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== NEWS ==================== -->
+
+        <section id="news" class="section-padding">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <p class="section-label">
+                        STAY UPDATED
+                    </p>
+
+                    <h2 class="fw-bold">
+                        Latest News
+                    </h2>
+
+                </div>
+
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <article class="custom-card h-100">
+
+                            <h3>
+                                IEEE MNU SB Hosts Technical Workshop
+                            </h3>
+
+                            <p>
+                                Learn more about our latest technical
+                                sessions and student activities.
+                            </p>
+
+                            <a href="#" class="read-more">
+                                Read More →
+                            </a>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <article class="custom-card h-100">
+
+                            <h3>
+                                New Student Activities
+                            </h3>
+
+                            <p>
+                                Discover upcoming opportunities for
+                                students to participate and grow.
+                            </p>
+
+                            <a href="#" class="read-more">
+                                Read More →
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer id="contact" class="bg-dark text-light">
+
+        <div class="container py-5">
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+
+                    <h3>
+                        IEEE MNU Student Branch
+                    </h3>
+
+                    <p>
+                        Connecting students with technology,
+                        innovation and opportunity.
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <h5>
+                        Quick Links
+                    </h5>
+
+                    <a href="#home" class="footer-link">
+                        Home
+                    </a>
+
+                    <a href="#about" class="footer-link">
+                        About
+                    </a>
+
+                    <a href="#events" class="footer-link">
+                        Events
+                    </a>
+
+                    <a href="#partners" class="footer-link">
+                        Partners
+                    </a>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <h5>
+                        Contact
+                    </h5>
+
+                    <p>
+                        Mansoura National University
+                    </p>
+
+                    <p>
+                        Email: example@email.com
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="border-top border-secondary text-center py-3">
+
+            <p class="mb-0">
+                © 2026 IEEE MNU Student Branch
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Event Details Modal -->
+
+    <div
+        class="modal fade"
+        id="eventModal"
+        tabindex="-1"
+        aria-hidden="true"
+    >
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5
+                        class="modal-title"
+                        id="modalEventName"
+                    >
+                        Event
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                    ></button>
+
+                </div>
+
+
+                <div class="modal-body">
+
+                    <p>
+                        <strong>Category:</strong>
+                        <span id="modalEventCategory"></span>
+                    </p>
+
+                    <p>
+                        <strong>Date:</strong>
+                        <span id="modalEventDate"></span>
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong>
+                        <span id="modalEventLocation"></span>
+                    </p>
+
+                    <p id="modalEventDescription"></p>
+
+                </div>
+
+
+                <div class="modal-footer">
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >
+                        Close
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                    >
+                        Register
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+</body>
+
+</html>
