@@ -3,27 +3,13 @@
 }
 
 body {
-    margin: 00;
+    margin: 0;
     font-family: Arial, sans-serif;
     color: #222;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #111;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
 section {
-    padding: 100px, 20px;
+    padding: 100px 20px;
 }
 
 #home {
@@ -72,7 +58,7 @@ button,
 #event-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20 px;
+    gap: 20px;
     margin-top: 30px;
 }
 

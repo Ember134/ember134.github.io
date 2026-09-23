@@ -5,21 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IEEE MNU Student Branch</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"> <!--BOOTSTRAP-->
     <link rel="stylesheet" href="styles.css"> <!--CSS-->
-    <script src="script.js"></script> <!--JS-->
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <a href="#home">IEEE MNU SB</a>
-            <a href="#about">About</a>
-            <a href="#events">Events</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#partners">Partners</a>
-            <a href="#news">News</a>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand"href="#home">IEEE MNU SB</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">
+                                Events
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#achievements">
+                                Achievements
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#partners">
+                                Partners
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">
+                                News
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -30,7 +71,7 @@
             <h1>Connecting Students with Technology and Innovation</h1>
             <p>Discover events, workshops, projects, and opportunities to grow with IEEE.</p>
             <a href="#events">Explore Events</a>
-            <a href="about">Learn More</a>
+            <a href="#about">Learn More</a>
         </section>
             <!--ABOUT-->
         <section id="about">
@@ -50,9 +91,9 @@
         <section id="events">
             <h2>Upcoming Events</h2>
             
-            <button onclick="filterEvents('all', this)">All</button>
-            <button onclick="filterEvents('Technical', this)">Technical</button>
-            <button onclick="filterEvents('Competition', this)">Competition</button>
+            <button class="filter-btn" onclick="filterEvents('all', this)">All</button>
+            <button class="filter-btn" onclick="filterEvents('Technical', this)">Technical</button>
+            <button class="filter-btn" onclick="filterEvents('Competition', this)">Competition</button>
 
             <div id="event-container"></div>
         </section>
@@ -76,7 +117,7 @@
             <div>Partner 3</div>
         </section>
             <!--NEWS-->
-        <section>
+        <section id="news">
             <h2>Latest News</h2>
             <article>
                 <h3>IEEE MNU SB Hosts Technical Workshop</h3>
@@ -96,6 +137,8 @@
         <p>Mansoura National University</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> <!--BOOTSTRAP-->
+    <script src="script.js"></script> <!--JS-->
 </body>
 
 </html>
