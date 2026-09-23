@@ -175,6 +175,14 @@ section {
     margin-bottom: 20px;
 }
 
+.profile-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 30px;
+}
 
 /* ==================== PROJECTS ==================== */
 
