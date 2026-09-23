@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IEEE MNU Student Branch</title>
+    
+    <link rel="stylesheet" href="styles.css"> <!--CSS-->
+    <script src="script.js"></script> <!--JS-->
 </head>
 
 <body>
@@ -43,8 +46,55 @@
                 a community of like-minded students.
             </p>
         </section>
+            <!--EVENTS-->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            
+            <button onclick="filterEvents('all', this)">All</button>
+            <button onclick="filterEvents('Technical', this)">Technical</button>
+            <button onclick="filterEvents('Competition', this)">Competition</button>
+
+            <div id="event-container"></div>
+        </section>
+            <!--ACHIEVEMENTS-->
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <div>
+                <h3>20+</h3>
+                <p>Events</p>
+            </div>
+            <div>
+                <h3>300+</h3>
+                <p>Members</p>
+            </div>
+        </section>
+            <!--PARTNERS-->
+        <section id="partners">
+            <h2>Our Partners</h2>
+            <div>Partner 1</div>
+            <div>Partner 2</div>
+            <div>Partner 3</div>
+        </section>
+            <!--NEWS-->
+        <section>
+            <h2>Latest News</h2>
+            <article>
+                <h3>IEEE MNU SB Hosts Technical Workshop</h3>
+                <p>
+                    Learn more about our latest technical sessions and student activities
+                </p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
 
     </main>
+
+    <footer>
+        <h3>IEEE MNU Student Branch</h3>
+        <p>Connecting students with technology, innovation, and opportunity</p>
+        <h4>Contact</h4>
+        <p>Mansoura National University</p>
+    </footer>
 
 </body>
 
