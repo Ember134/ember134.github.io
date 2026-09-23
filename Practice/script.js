@@ -32,19 +32,23 @@ function displayEvents(eventList) {
 
         container.innerHTML += `
 
-            <div class="event-card">
+            <div class="col-md-6 col-lg-4">
 
-                <h3>
-                    ${event.name}
-                </h3>
+                <div class="event-card">
 
-                <p>
-                    ${event.category}
-                </p>
+                    <h3>
+                        ${event.name}
+                    </h3>
 
-                <p>
-                    ${event.date}
-                </p>
+                    <p>
+                        ${event.category}
+                    </p>
+
+                    <p>
+                        ${event.date}
+                    </p>
+
+                </div>
 
             </div>
 
@@ -63,12 +67,14 @@ function filterEvents(category, selectedButton) {
 
     buttons.forEach(button => {
 
-        button.classList.remove("active");
+        button.classList.remove("btn-primary");
+        button.classList.add("btn-outline-primary");
 
     });
 
 
-    selectedButton.classList.add("active");
+    selectedButton.classList.remove("btn-outline-primary");
+    selectedButton.classList.add("btn-primary");
 
 
     let filteredEvents;

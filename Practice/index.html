@@ -67,12 +67,24 @@
     <main>
             <!--HOME-->
         <section id="home">
-            <p>IEEE MNU Student Branch</p>
-            <h1>Connecting Students with Technology and Innovation</h1>
-            <p>Discover events, workshops, projects, and opportunities to grow with IEEE.</p>
-            <a href="#events">Explore Events</a>
-            <a href="#about">Learn More</a>
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-8 mx-auto text-center">
+
+                        <p>IEEE MNU Student Branch</p>
+                        <h1>Connecting Students with Technology and Innovation</h1>
+                        <p>Discover events, workshops, projects, and opportunities to grow with IEEE.</p>
+                        <a href="#events" class="btn btn-primary">Explore Events</a>
+                        <a href="#about" class="btn btn-primary">Learn More</a>
+                    </div>
+
+                </div>
+
+            </div>
         </section>
+
             <!--ABOUT-->
         <section id="about">
             <h2>About IEEE MNU SB</h2>
@@ -87,45 +99,138 @@
                 a community of like-minded students.
             </p>
         </section>
+
             <!--EVENTS-->
         <section id="events">
-            <h2>Upcoming Events</h2>
+            <div class="container">
+                <h2 class="mb-4">Upcoming Events</h2>
             
-            <button class="filter-btn" onclick="filterEvents('all', this)">All</button>
-            <button class="filter-btn" onclick="filterEvents('Technical', this)">Technical</button>
-            <button class="filter-btn" onclick="filterEvents('Competition', this)">Competition</button>
+                <button class="btn btn-primary filter-btn" onclick="filterEvents('all', this)">All</button>
+                <button class="btn btn-primary filter-btn" onclick="filterEvents('Technical', this)">Technical</button>
+                <button class="btn btn-primary filter-btn" onclick="filterEvents('Competition', this)">Competition</button>
 
-            <div id="event-container"></div>
+                <div id="event-container" class="row g-4"></div>
+            </div>
         </section>
+
             <!--ACHIEVEMENTS-->
         <section id="achievements">
-            <h2>Achievements</h2>
-            <div>
-                <h3>20+</h3>
-                <p>Events</p>
+
+            <div class="container">
+
+                <h2 class="mb-4">
+                    Achievements
+                </h2>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+
+                        <div class="event-card text-center">
+
+                            <h3>20+</h3>
+
+                            <p>Events</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="event-card text-center">
+
+                            <h3>300+</h3>
+
+                            <p>Members</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
-            <div>
-                <h3>300+</h3>
-                <p>Members</p>
-            </div>
+
         </section>
+
             <!--PARTNERS-->
         <section id="partners">
-            <h2>Our Partners</h2>
-            <div>Partner 1</div>
-            <div>Partner 2</div>
-            <div>Partner 3</div>
+
+            <div class="container">
+
+                <h2 class="mb-4">
+                    Our Partners
+                </h2>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+
+                        <div class="event-card text-center">
+                            Partner 1
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="event-card text-center">
+                            Partner 2
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="event-card text-center">
+                            Partner 3
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
+
             <!--NEWS-->
         <section id="news">
-            <h2>Latest News</h2>
-            <article>
-                <h3>IEEE MNU SB Hosts Technical Workshop</h3>
-                <p>
-                    Learn more about our latest technical sessions and student activities
-                </p>
-                <a href="#">Read More</a>
-            </article>
+
+            <div class="container">
+
+                <h2 class="mb-4">
+                    Latest News
+                </h2>
+
+                <div class="row">
+
+                    <div class="col-lg-8">
+
+                        <article class="event-card">
+
+                            <h3>
+                                IEEE MNU SB Hosts Technical Workshop
+                            </h3>
+
+                            <p>
+                                Learn more about our latest technical
+                                sessions and student activities.
+                            </p>
+
+                            <a href="#" class="btn btn-primary">
+                                Read More
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>

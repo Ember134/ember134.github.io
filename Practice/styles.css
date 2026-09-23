@@ -30,19 +30,6 @@ section {
     color: white;
 }
 
-button,
-#home a {
-    display: inline-block;
-
-    padding: 12px 20px;
-
-    border-radius: 8px;
-
-    text-decoration: none;
-
-    cursor: pointer;
-}
-
 .event-card {
     padding: 30px;
 
@@ -53,21 +40,6 @@ button,
     border: 1px solid #ddd;
 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-}
-
-#event-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 30px;
-}
-
-@media (max-width: 768px) {
-
-    #event-container {
-        grid-template-columns: 1fr;
-    }
-
 }
 
 .filter-btn.active {
